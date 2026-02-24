@@ -4,3 +4,9 @@
 [submodule "home/jasonz/repo/github.com/tmux-plugins/tpm"]
 	path = home/jasonz/repo/github.com/tmux-plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "home/jasonz/repo/github.com/ksdpmx/ohmyzsh-custom/plugins/zsh-autosuggestions"]
+	path = home/jasonz/repo/github.com/ksdpmx/ohmyzsh-custom/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "home/jasonz/repo/github.com/ksdpmx/ohmyzsh-custom/plugins/zsh-syntax-highlighting"]
+	path = home/jasonz/repo/github.com/ksdpmx/ohmyzsh-custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

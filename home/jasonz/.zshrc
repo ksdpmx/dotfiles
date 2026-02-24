@@ -3,30 +3,24 @@ export LC_CTYPE=zh_CN.UTF-8
 export LC_ALL=
 export EDITOR="/usr/bin/vim"
 export TERM="xterm-256color"
-export REPO=$HOME/repo
-# export PATH=/home/jasonz/go/bin:/home/jasonz/bin:/sbin:$PATH
-export PATH=/home/jasonz/go/bin:/home/jasonz/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/games
-export GOPATH=/home/jasonz/go
 
-alias e="emacs -nw --debug-init"
+export PATH=$HOME/bin:$PATH
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 alias v="vim"
 alias l="ls"
 alias ll="ls -lhF --color"
 alias tmux="tmux -2"
 alias tmuxn="tmux -2 new-session -s $USER"
 alias tmuxa="tmux a -t"
-alias muxn="mux start jasonz"
-alias gcc="time gcc -W -Wall"
-alias gcc+="gcc -v -pg -W -Wall"
-alias g++="time g++ -W -Wall"
-alias clang="time clang"
 alias top="htop"
 alias h="history"
 alias q="exit"
-alias cd..="cd .."
-alias mv="mv -i"
+alias cd="z"
+alias j="z"
 
 ZSH=$HOME/repo/github.com/ohmyzsh/ohmyzsh
+ZSH_CUSTOM=$HOME/repo/github.com/ksdpmx/dotfiles/home/jasonz/repo/github.com/ksdpmx/ohmyzsh-custom
 ZSH_THEME="jasonz"
 plugins=(git colorize tmux zoxide git-auto-fetch zsh-autosuggestions zsh-syntax-highlighting)
 
@@ -47,4 +41,4 @@ ZSH_TMUX_UNICODE=true
 GIT_AUTO_FETCH_INTERVAL=300 # seconds
 
 source $ZSH/oh-my-zsh.sh
-
+eval "$(zoxide init zsh)"
