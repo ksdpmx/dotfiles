@@ -1,3 +1,6 @@
-[submodule "home/jasonz/repo/oh-my-zsh"]
-	path = home/jasonz/repo/oh-my-zsh
-	url = https://github.com/jasonzzz/oh-my-zsh
+[submodule "home/jasonz/repo/github.com/ohmyzsh/ohmyzsh"]
+	path = home/jasonz/repo/github.com/ohmyzsh/ohmyzsh
+	url = https://github.com/ohmyzsh/ohmyzsh
+[submodule "home/jasonz/repo/github.com/tmux-plugins/tpm"]
+	path = home/jasonz/repo/github.com/tmux-plugins/tpm
+	url = https://github.com/tmux-plugins/tpm

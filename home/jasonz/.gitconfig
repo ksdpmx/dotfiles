@@ -1,8 +1,9 @@
 [user]
-	email = mock2u@gmail.com
+	email = ksdpmx@gmail.com
 	name = jasonz
 [core]
 	editor = vim
+    autocrlf = input
 [color]
 	ui = true
 [credential]
@@ -13,3 +14,7 @@
     st = status
     pl = pull
     ps = push
+[init]
+	defaultBranch = main
+[push]
+    default = simple

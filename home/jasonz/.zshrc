@@ -3,16 +3,10 @@ export LC_CTYPE=zh_CN.UTF-8
 export LC_ALL=
 export EDITOR="/usr/bin/vim"
 export TERM="xterm-256color"
-export GOPATH="$HOME/github/go-test/"
-export BOOK="$HOME/temp/book/"
-export PATH=$PATH:$HOME/github/go-test/bin
-export PATH=$PATH:$HOME/.gem/ruby/2.1.0/bin
-export PATH=$PATH:$HOME/node_modules/.bin
 export REPO=$HOME/repo
-
-export ES_HOME="/usr/share/elasticsearch"
-export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
-export HADOOP_HOME="/usr/lib/hadoop"
+# export PATH=/home/jasonz/go/bin:/home/jasonz/bin:/sbin:$PATH
+export PATH=/home/jasonz/go/bin:/home/jasonz/bin:/sbin:/usr/local/bin:/usr/bin:/bin:/usr/games
+export GOPATH=/home/jasonz/go
 
 alias e="emacs -nw --debug-init"
 alias v="vim"
@@ -29,16 +23,28 @@ alias clang="time clang"
 alias top="htop"
 alias h="history"
 alias q="exit"
-alias ruby="ruby -w"
-alias irb="irb -r irb/completion"
 alias cd..="cd .."
+alias mv="mv -i"
 
-ZSH=$REPO/oh-my-zsh
-ZSH_THEME="mine"
+ZSH=$HOME/repo/github.com/ohmyzsh/ohmyzsh
+ZSH_THEME="jasonz"
+plugins=(git colorize tmux zoxide git-auto-fetch zsh-autosuggestions zsh-syntax-highlighting)
+
+# colorize
+ZSH_COLORIZE_TOOL="pygmentize"
+ZSH_COLORIZE_STYLE="colorful"
+
+# tmux
+ZSH_TMUX_AUTOSTART=true
+ZSH_TMUX_AUTOSTART_ONCE=true
+ZSH_TMUX_CONFIG="$HOME/.tmux.conf"
+ZSH_TMUX_DEFAULT_SESSION_NAME="jasonz"
+ZSH_TMUX_FIXTERM=true
+ZSH_TMUX_ITERM2=false
+ZSH_TMUX_UNICODE=true
+
+# git-auto-fetch
+GIT_AUTO_FETCH_INTERVAL=300 # seconds
 
 source $ZSH/oh-my-zsh.sh
-eval `dircolors ~/.dir_colors`
 
-# rvm
-export PATH="$PATH:$HOME/.rvm/bin"
-export rvmsudo_secure_path=1
