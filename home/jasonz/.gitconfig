@@ -1,20 +1,21 @@
 [user]
-	email = ksdpmx@gmail.com
-	name = jasonz
+	name = Jason Zhang
+	email = jason.zhang@lexisnexis.com
 [core]
-	editor = vim
-    autocrlf = input
+	editor = code --wait
+	autocrlf = input
 [color]
 	ui = true
-[credential]
-	helper = cache
-[alias]
-    a = add
-    ci = commit
-    st = status
-    pl = pull
-    ps = push
+[merge]
+	tool = vscode
+[diff]
+	tool = vscode
 [init]
 	defaultBranch = main
 [push]
-    default = simple
+	default = simple
+[credential]
+	helper = !aws codecommit credential-helper $@
+[http]
+	sslbackend = openssl
+	sslVerify = true
